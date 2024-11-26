@@ -10,8 +10,8 @@ function App() {
 
   let passGen = useCallback(() => {
     let password =" ";
-
     let string = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+
     if (num) {
       string += "0123456789";
     }
@@ -19,13 +19,15 @@ function App() {
       string += "!@#$%^&*-_+=[]{}~`";
     }
     for (let i = 0; i < length; i++) {
-      password = string.charAt(Math.floor(Math.random() * string.length + 1));
+      let gen = Math.floor(Math.random() * string.length + 1)
+      password += string.charAt(gen);
     }
     setPass(password);
   }, [length, num, char]);
+
   useEffect(() => {
-    passGen();
-  }, [length, char, num, setPass, passGen]);
+    passGen()
+  }, [length, char, num, setPass, passGen])
 
   let copyText = useCallback(()=>{
       passWordGen.current?.select(
@@ -62,7 +64,7 @@ function App() {
               max={100}
               className="cursor-pointer"
               onChange={(e) => {
-                setLength(e.target.value);
+                setLength(e.target.value)
               }}
             />
             <label htmlFor="">Length:{length}</label>
@@ -74,7 +76,7 @@ function App() {
               id="numberInput"
               defaultChecked={num}
               onChange={() => {
-                setNum((prev) => !prev);
+                setNum((prev) =>!prev)
               }}
             />
             <label htmlFor="numberInput">Number</label>
@@ -86,7 +88,7 @@ function App() {
               id="characterInput"
               defaultChecked={char}
               onChange={() => {
-                setChar((prev) => !prev);
+                setChar((prev) =>!prev)
               }}
             />
             <label htmlFor="characterInput">Character</label>

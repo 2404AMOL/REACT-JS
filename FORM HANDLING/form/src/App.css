@@ -1,0 +1,62 @@
+.app{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 900px;
+  background-color: #edf1f4e1;
+}
+
+button {
+  width: 9em;
+  height: 3em;
+  border-radius: 30em;
+  font-size: 15px;
+  font-family: inherit;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  box-shadow: 6px 6px 12px #c5c5c5,
+              -6px -6px 12px #ffffff;
+ }
+ 
+ button::before {
+  content: '';
+  width: 0;
+  height: 3em;
+  border-radius: 30em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: .5s ease;
+  display: block;
+  z-index: -1;
+  color: white;
+  background-color: red;
+ }
+ 
+ button:hover::before {
+  color: white;
+  width: 9em;
+ }
+
+ h1{
+  text-align: center;
+ }
+
+ span{
+  font-size: 12px;
+  padding: 3px;
+  color: red;
+  display: none;
+ }
+ 
+ input:invalid[focus="true"] ~ span{
+  display: block;
+ }
+
+ fieldset{
+  box-shadow: 1px 5px 10px 15px #fff;
+  border: none;
+ }

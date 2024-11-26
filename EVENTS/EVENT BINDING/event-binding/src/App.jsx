@@ -10,11 +10,11 @@ function App() {
 
   return (
     <>
-      {/* <EventBinding/> */}
+      <EventBinding/>
       {/* <BindingInRenderMethod/> */}
       {/* <BindingInClass/> */}
       {/* <BindingInContructor/> */}
-      <BindingInArrowFunction/>
+      {/* <BindingInArrowFunction/> */}
     </>
   )
 }
