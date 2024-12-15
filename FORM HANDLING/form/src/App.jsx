@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import FormInput from './Components/FormInput'
+<<<<<<< HEAD
 function App() {
   let [values, setValues] = useState({
     userName: '',
@@ -107,10 +108,26 @@ function App() {
                 <button>Submit</button>
               </form>
       </fieldset>
+=======
+
+function App() {
+  let [userName, setUserName] = useState("");
+  console.log(userName)
+  return (
+    <>
+      <div className='app'>
+        <FormInput placeholder = "UserName" setUserName ={setUserName}/>
+        <FormInput placeholder = "UserName"/>
+        <FormInput placeholder = "UserName"/>
+        <FormInput placeholder = "UserName"/>
+>>>>>>> 4e16b180a04bf88637fdb562df0500e6e72d0e04
       </div>
     </>
   )
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4e16b180a04bf88637fdb562df0500e6e72d0e04
 export default App

@@ -1,14 +1,10 @@
 {
-  "name": "update-lifecycle-methods",
+  "name": "form-handling",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-<<<<<<< HEAD
     "dev": "vite --open",
-=======
-    "dev": "vite",
->>>>>>> 4e16b180a04bf88637fdb562df0500e6e72d0e04
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"

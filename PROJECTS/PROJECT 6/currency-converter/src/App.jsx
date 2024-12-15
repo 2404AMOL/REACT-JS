@@ -16,7 +16,10 @@ export default function App() {
   //todo : So we use Object.keys(currInfo) to get the key of the Object
   let options = Object.keys(currInfo);
   let swap = () => {
+<<<<<<< HEAD
     
+=======
+>>>>>>> 4e16b180a04bf88637fdb562df0500e6e72d0e04
     setFrom(to);
     setTo(from);
     setAmount(convAmt);

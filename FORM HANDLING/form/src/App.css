@@ -3,8 +3,12 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+<<<<<<< HEAD
   height: 900px;
   background-color: #edf1f4e1;
+=======
+  height: 100vh;
+>>>>>>> 4e16b180a04bf88637fdb562df0500e6e72d0e04
 }
 
 button {
@@ -29,6 +33,7 @@ button {
   position: absolute;
   top: 0;
   left: 0;
+<<<<<<< HEAD
   transition: .5s ease;
   display: block;
   z-index: -1;
@@ -38,10 +43,23 @@ button {
  
  button:hover::before {
   color: white;
+=======
+  background-image: linear-gradient(to right, #0fd850 0%, #f9f047 100%);
+  transition: .5s ease;
+  display: block;
+  z-index: -1;
+ }
+ 
+ button:hover::before {
+>>>>>>> 4e16b180a04bf88637fdb562df0500e6e72d0e04
   width: 9em;
  }
 
  h1{
+<<<<<<< HEAD
+=======
+  color: red;
+>>>>>>> 4e16b180a04bf88637fdb562df0500e6e72d0e04
   text-align: center;
  }
 
@@ -52,6 +70,7 @@ button {
   display: none;
  }
  
+<<<<<<< HEAD
  input:invalid[focus="true"] ~ span{
   display: block;
  }
@@ -60,3 +79,8 @@ button {
   box-shadow: 1px 5px 10px 15px #fff;
   border: none;
  }
+=======
+ input:invalid ~ span{
+  display: block;
+ }
+>>>>>>> 4e16b180a04bf88637fdb562df0500e6e72d0e04

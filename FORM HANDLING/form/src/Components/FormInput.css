@@ -3,12 +3,16 @@ input{
     margin: 10px 0;
     border-radius: 5px;
     border: 2px solid #212121;
+<<<<<<< HEAD
     border: none;
+=======
+>>>>>>> 4e16b180a04bf88637fdb562df0500e6e72d0e04
 }
 
 .formInput{
     display: flex;
     flex-direction: column;
+<<<<<<< HEAD
     width: 380px;   
 }
 
@@ -16,4 +20,7 @@ span{
     font-size: 12px;
     padding: 3px;
     color: red;
+=======
+    width: 280px;
+>>>>>>> 4e16b180a04bf88637fdb562df0500e6e72d0e04
 }

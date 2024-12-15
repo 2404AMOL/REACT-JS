@@ -33,7 +33,11 @@ function Input({
         <p className="text-black/40 mb-2 w-full">Currency Type</p>
         <select className="rounded-lg px-1 py-1 bg-gray-100 cursor-pointer outline-none"
         value={selectCurrency}
+<<<<<<< HEAD
         onChange={(e) => onCurrencyChange && onCurrencyChange(e.target.value)}
+=======
+        onChange={onCurrencyChange}
+>>>>>>> 4e16b180a04bf88637fdb562df0500e6e72d0e04
         disabled={currencyDisable}
         >
           {currencyOptions.map((currency)=>(

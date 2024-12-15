@@ -3,8 +3,11 @@ import React, { Component } from 'react'
 export default class Constructor extends Component {
 
     constructor(props){
+<<<<<<< HEAD
         console.log("This is a constructor() Method called");
         
+=======
+>>>>>>> 4e16b180a04bf88637fdb562df0500e6e72d0e04
         super(props);
         this.state={
             count : props.count
